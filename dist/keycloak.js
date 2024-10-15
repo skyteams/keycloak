@@ -295,8 +295,8 @@
         }
 
         kc.createLogoutUrl = function(options) {
-            var url = kc.endpoints.logout()
-                + '?post_logout_redirect_uri=' + encodeURIComponent(adapter.redirectUri(options, false));
+            //var url = kc.endpoints.logout() + '?post_logout_redirect_uri=' + encodeURIComponent(adapter.redirectUri(options, false));
+            var url = kc.endpoints.logout();
 
             return url;
         }
