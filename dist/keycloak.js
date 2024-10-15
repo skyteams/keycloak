@@ -254,7 +254,7 @@
 
             var url = baseUrl
                 + '?client_id=' + encodeURIComponent(kc.clientId)
-                + '&post_logout_redirect_uri=' + encodeURIComponent(redirectUri)
+                + '&redirect_uri=' + encodeURIComponent(redirectUri)
                 + '&state=' + encodeURIComponent(state)
                 + '&response_mode=' + encodeURIComponent(kc.responseMode)
                 + '&response_type=' + encodeURIComponent(kc.responseType)
@@ -565,7 +565,7 @@
                     params += '&client_id=' + encodeURIComponent(kc.clientId);
                 }
 
-                params += '&post_logout_redirect_uri=' + oauth.redirectUri;
+                params += '&redirect_uri=' + oauth.redirectUri;
 
                 req.withCredentials = true;
 
